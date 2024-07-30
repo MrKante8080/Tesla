@@ -1,0 +1,59 @@
+#!/bin/bash
+echo "Welcome to Git and Github commits"
+echo "Please enter your name"
+read -p "What is your name?: " name
+echo "Thanks $name please hold on while your account is beeing created"
+sleep 5
+date=$(date)
+echo "Your account was successfully created on the $date"
+echo "Please enter your year of birth"
+read birthYear
+current_year=2024
+age=$(( current_year - birthYear )) 
+echo "Thanks $name you were born in $birthYear and you are $age years old"
+sleep 3
+echo "while loop exercise"
+echo "Please enter your year of birth"
+read year1
+count=$year1
+while (( count <= 2024 )); do
+echo $count
+count=$(( count + 10 ))
+done
+echo "You have successfully been through the following decades"
+echo "end of While loop"
+sleep 3
+echo "For loop exercise"
+echo "Please enter your year of birth again"
+read year2
+for (( age1=year2; age1<=2024; age1+=10 )); do
+echo $age1
+done
+echo "You have been through the following years successfully"
+echo "End of for loop"
+sleep 3
+echo "If Statements"
+read -p "Please enter your age again :" age1
+if (( $age1 < 25 && $age1 > 20 )); then
+echo "Your are in the adulecent stage"
+elif (( $age1 >= 25 )); then
+echo "You are now an adult"
+else 
+echo "You are either a child or a teenager"
+fi
+echo "Thanks for running our if statement"
+echo "end of If statement"
+sleep 3
+echo "Functions Practice"
+date
+echo "Thanks for lunching our functions application"
+identify() {
+echo "Welcome"
+read -p "who are you?: " person
+echo "Thanks for Registering on $(date) $person your account is beeing created"
+sleep 2
+echo "Account creation was successfull"
+}
+identify
+sleep 5
+echo "you have come to the end of our program, thanks for participating guys"
