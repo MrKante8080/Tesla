@@ -33,7 +33,7 @@ echo "You have been through the following years successfully"
 echo "End of for loop"
 sleep 3
 echo "If Statements"
-read -p "Please enter your age again :" age1
+read -p "Please enter your age again: " age1
 if (( $age1 < 25 && $age1 > 20 )); then
 echo "Your are in the adulecent stage"
 elif (( $age1 >= 25 )); then
